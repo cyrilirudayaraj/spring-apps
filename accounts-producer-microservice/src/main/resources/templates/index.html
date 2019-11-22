@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8">
+      <title>Baedose</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/styles.css}" />
+   </head>
+   <body>
+      <th:block th:include="/_header"></th:block>
+      <th:block th:include="/_menu"></th:block>
+       
+      <div class="page-title">Shopping Cart</div>
+      <img src="../static/images/baedoselogo.jpg" width="1000" th:src="@{images/baedoselogo.jpg}"/>
+      <div class="demo-container">
+         <h3>What can i do?</h3>
+         <ul>
+            <li>Order online</li>
+            <li>Admin pages</li>
+            <li>Reports</li>
+         </ul>
+      </div>
+       
+      <th:block th:include="/_footer"></th:block>
+       
+   </body>
+</html>
